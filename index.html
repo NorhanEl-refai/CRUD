@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CRUD</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+
+
+        <div class="container py-5">
+
+
+        
+                <div class="form-group">
+
+                    <label for="productNameInput">ProductName :</label>
+                    <input class="form-control" type="text" id="productNameInput">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="productPriceInput">ProductPrice :</label>
+                    <input class="form-control" type="number" id="productPriceInput">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="ProductCategoryInput">ProductCategory :</label>
+                    <input class="form-control" type="text" id="ProductCategoryInput">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="productDescInput">ProductDescription :</label>
+                    <textarea class="form-control" type="text" id="productDescInput"></textarea>
+                </div>
+
+
+
+                <button id="mainBtn" onclick="addProduct();" class="btn btn-outline-info">add Product</button>
+
+        </div>
+
+
+
+        <div class="container">
+
+            <input onkeyup="searchProduct(this.value)" placeholder="search product" class="form-control w-75 m-auto" type="text" name="" id="">
+
+            <table class="table mt-4">
+                <thead>
+                    <th>index</th>
+                    <th>ProductName</th>
+                    <th>ProductPrice</th>
+                    <th>ProductCategory</th>
+                    <th>ProductDesc</th>
+                    <th>update</th>
+                    <th>delete</th>
+
+                </thead>
+                <tbody id="tableBody">
+                
+                
+                </tbody>
+            </table>
+
+        </div>
+
+
+
+
+    
+
+        <script src="js/script.js"></script>
+
+    </body>
+
+</html>
